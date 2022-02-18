@@ -1,0 +1,10 @@
+patch a sw.diff -o b
+
+//patch é o contrário do diff	
+	se o diff mostra as diferenças entre os arquivos a e b
+	o patch vai mostrar o caminho reverso 
+	como o arquivo sw.diff foi formado a partir do a e do b
+
+//-o 
+	é de output
+	garante que o output encontrado seja colocado no b

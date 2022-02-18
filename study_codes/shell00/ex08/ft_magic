@@ -1,0 +1,20 @@
+41 string 42 file 42
+
+//41 string 42 42 file
+
+//link util -> https://www.mkssoftware.com/docs/man4/magic.4.asp
+
+//The magic file contains lines describing magic numbers which identify 
+	particular types of files
+
+//primeira coluna 
+	byte no qual se quer encontrar uma informação 
+
+//segunda coluna 
+	tipo de informação que será buscado
+
+//terceira coluna 
+	o valor buscado
+
+//quarta coluna	
+	o que será printado se o valor buscado for encontrado

@@ -1,0 +1,9 @@
+find . -type f \( -iname "*~" -o -iname "#*#" \) -print -delete
+
+//find . -type f -> encontra arquivos no diretório atual
+
+-iname -> faz com que o find procure arquivos com o nome especifico 
+-o -> or -> ou
+
+-print -> printa o que foi encontrado
+-delete -> deleta o que foi encontrado

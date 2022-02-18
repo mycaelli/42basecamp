@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    string&pointers                                    :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mcerquei <mcerquei@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/02/09 15:46:04 by mcerquei          #+#    #+#              #
+#    Updated: 2022/02/09 15:46:05 by mcerquei         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+### STRING ###
+	string é uma sequencia de caracteres salva em um array
+	o fim da string é marcado pelo caracter null (\0) = null-terminator
+		When you have not-necessarily-null-terminated text data, 
+		you need to keep track of the length some other way, usually with a separate len variable. 
+		link útil->https://stackoverflow.com/questions/69584069/in-c-is-it-possible-to-create-a-string-without-0null
+
+	char str[6]; //aloca um index a mais para o \0
+	str = "Hello"; //não precisa incluir o \0 na inicialização
+------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+### POINTERS % STRINGS ###
+	o ponteiro aponta para o endereço do primeiro index da string (char array)
+	char str[6] = "Hello";
+	char *ptr = str; //aponta para o endereço do 
+------------------------------------------------------------------------------------------------------------------------------------
