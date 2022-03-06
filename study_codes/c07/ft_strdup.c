@@ -1,29 +1,28 @@
-
-
-#include <unistd.h>
+//#include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h>
-
-char *ft_strdup(char *src)
+//#include <stdlib.h>
+//#include <string.h>
+char	*ft_strdup(char *src)
 {
-	char *dest;
-	int i;
-	int j;
-	
+	int	i;
+	char	*dest;
+	char	*p;
+
 	i = 0;
-	j = -1;
-	while (src[i++] != '\0');
-	dest = malloc(i*sizeof(char));
-	dest[i] = '\0';
-	while (++j < i)
-		dest[j] = src[j];
-	return dest;
+	while (src[++i]);
+	
+	dest = malloc(i);
+	p = dest;
+	while (*src)
+		*p++ = *src++;		
+	*p = '\0';
+	return (dest);
 }	
 
-int main()
-{
-	char *str = "myca";
-	printf("src: %s\n", str);
-	printf("dest: %s\n", ft_strdup(str));
-	return (0);
-}
+//int main()
+//{
+//	char *str = "myca";
+//	printf("src: %s\n", str);
+//	printf("dest: %s\n", ft_strdup(str));
+//	return (0);
+//}
