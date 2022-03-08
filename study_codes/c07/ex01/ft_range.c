@@ -3,25 +3,28 @@
 
 int	*ft_range(int min, int max)
 {
-	int *range;
+	int *buffer;
 	int i;
+	int range;
 
 	i = 0;
+	range = max - min-1;
 	if (min >= max)
 		return (NULL);
 	printf("aqui");	
-	if ((range = malloc(max-min * sizeof(int))) == NULL) //if NULL -> not enough memory space
+	if ((buffer = malloc(range * sizeof(int))) == NULL) //if NULL -> not enough memory space
 		return (NULL);	
 	printf("heree");
-	int aux = max - min;
-	printf("%d\n", aux);
-	while (min < max)
-		range[i++] = min++;
-	for (int j = 0; j < aux; j++)
-	{
-		printf("%d ", range[j]);
-	}
-	return (range);
+//	int aux = max - min;
+//	printf("%d\n", aux);
+	while (min <= range)
+		buffer[i++] = min++;
+//	for (int j = 0; j < aux; j++)
+//	{
+//		printf("%d ", buffer[j]);
+//	}
+
+	return (buffer);
 }
 
 int main()
