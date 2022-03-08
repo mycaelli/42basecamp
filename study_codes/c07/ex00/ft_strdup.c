@@ -1,4 +1,4 @@
-/*not validated by norminett*/e
+/*not validated by norminett*/
 
 #include <stdio.h>
 char	*ft_strdup(char *src)
