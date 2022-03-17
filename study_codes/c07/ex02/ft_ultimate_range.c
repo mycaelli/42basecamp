@@ -9,6 +9,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	int *buffer;
 
 	n = 0;	
+//	range = NULL;
 	if (min > max)
 		return 0;
 	size = max - min;
